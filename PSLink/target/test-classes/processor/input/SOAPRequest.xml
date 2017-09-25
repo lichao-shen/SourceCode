@@ -1,9 +1,0 @@
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.pslink.pshealth.co.uk/">
-   <soapenv:Header/>
-   <soapenv:Body>
-      <ser:sayHello>
-         <!--Optional:-->
-         <arg0>aaedrga</arg0>
-      </ser:sayHello>
-   </soapenv:Body>
-</soapenv:Envelope>
