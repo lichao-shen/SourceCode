@@ -1,52 +1,46 @@
-# Prerequisites
-*.d
+# http://www.gnu.org/software/automake
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+Makefile.in
+/ar-lib
+/mdate-sh
+/py-compile
+/test-driver
+/ylwrap
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# http://www.gnu.org/software/autoconf
 
-# Precompiled Headers
-*.gch
-*.pch
+/autom4te.cache
+/autoscan.log
+/autoscan-*.log
+/aclocal.m4
+/compile
+/config.guess
+/config.h.in
+/config.sub
+/configure
+/configure.scan
+/depcomp
+/install-sh
+/missing
+/stamp-h1
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# https://www.gnu.org/software/libtool/
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+/ltmain.sh
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+# http://www.gnu.org/software/texinfo
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+/texinfo.tex
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+
+.classpath
+.project
+.idea
+*.iml
+*.ipr
+*/.settings/
+jars
+*.class
+*.txt
+*/target/**
+
