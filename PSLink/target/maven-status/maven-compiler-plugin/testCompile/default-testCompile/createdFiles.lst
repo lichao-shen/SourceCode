@@ -1,0 +1,8 @@
+uk\co\pshealth\pslink\controller\PDSControllerTest.class
+uk\co\pshealth\pslink\xquery\XQueryTest.class
+uk\co\pshealth\pslink\schema\SchemaValidationTest.class
+uk\co\pshealth\pslink\processor\SOAPRequestProcessorTest.class
+uk\co\pshealth\pslink\service\SOAPWebServiceTimeoutHandler.class
+uk\co\pshealth\pslink\service\SOAPWebServiceTimeoutImpl.class
+uk\co\pshealth\pslink\service\SOAPWebServiceImpl.class
+uk\co\pshealth\pslink\service\SOAPWebService.class

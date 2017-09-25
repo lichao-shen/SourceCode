@@ -1,0 +1,20 @@
+<SimpleTraceQuery xmlns="http://pshealth.co.uk">
+	<messageInfo>
+		<messageType>PDSQuery</messageType>	
+		<messageName>PDS-Simple-Trace-Query</messageName>
+		<messageCreationTime>20170503091903</messageCreationTime>	
+	</messageInfo>
+	<userInfo>
+		<userName>ART User Name</userName>
+		<userRole>ART User Role</userRole>
+	</userInfo>
+	<address>		
+		<postalCode>EX2 5SE</postalCode>
+	</address>
+	<gender>1</gender>
+	<birthTime>19780719</birthTime>
+	<name>			
+		<given>John</given>
+		<family>Parkinson</family>			
+	</name>
+</SimpleTraceQuery>

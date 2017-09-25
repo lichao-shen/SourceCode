@@ -1,0 +1,20 @@
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="
+             http://www.osgi.org/xmlns/blueprint/v1.0.0 https://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd">
+ 
+  <camelContext xmlns="http://camel.apache.org/schema/blueprint">
+ 
+    <route>
+      <from uri="direct:Retrieval"/>
+      <to uri="validator:schema\RetrievalQuery.xsd"/>
+    </route>
+
+	<route>
+      <from uri="direct:SimpleTrace"/>
+      <to uri="validator:schema\SimpleTraceQuery.xsd"/>
+    </route>
+
+  </camelContext>
+ 
+</blueprint>

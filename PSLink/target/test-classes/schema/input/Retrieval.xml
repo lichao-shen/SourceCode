@@ -1,0 +1,17 @@
+<RetrievalQuery xmlns="http://pshealth.co.uk">
+	<messageInfo>
+		<messageType>PDSQuery</messageType>	
+		<messageName>PDS-Simple-Trace-Query</messageName>
+		<messageCreationTime>20170503091903</messageCreationTime>	
+	</messageInfo>
+	<userInfo>
+		<userName>ART User Name</userName>
+		<userRole>ART User Role</userRole>
+	</userInfo>
+	<historicDataIndicator>1</historicDataIndicator>
+	<NHSNumber>
+		<identifier>NHS number</identifier>
+		<value>9999999484</value>
+	</NHSNumber>
+	<retrievalItem>person.allData</retrievalItem>
+</RetrievalQuery>

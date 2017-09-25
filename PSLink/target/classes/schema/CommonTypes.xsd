@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://pshealth.co.uk" elementFormDefault="qualified" >							
+
+	<xs:complexType name="messageInfo">
+		<xs:sequence>
+			<xs:element name="messageType" type="xs:string"/>
+			<xs:element name="messageName" type="xs:string"/>
+			<xs:element name="messageCreationTime" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="userInfo">
+		<xs:sequence>
+			<xs:element name="userName" type="xs:string"/>
+			<xs:element name="userRole" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>

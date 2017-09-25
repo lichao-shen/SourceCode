@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ps="http://pshealth.co.uk" targetNamespace="http://pshealth.co.uk" elementFormDefault="qualified" >							
+	<xs:include schemaLocation="CommonTypes.xsd"/>
+	<xs:element name="RetrievalQuery">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="messageInfo" minOccurs="1" maxOccurs="1" type="ps:messageInfo"/>
+				<xs:element name="userInfo" minOccurs="1" maxOccurs="1" type="ps:userInfo"/>
+				<xs:element name="historicDataIndicator" minOccurs="1" maxOccurs="1" type="xs:string"/>
+				<xs:element name="NHSNumber" minOccurs="1" maxOccurs="1" type="ps:NHSNumberType"/>
+				<xs:element name="retrievalItem" minOccurs="0" maxOccurs="1" type="ps:retrievalItemType"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="NHSNumberType"> 
+		<xs:sequence>			
+			<xs:element name="identifier" minOccurs="1" maxOccurs="1" type="ps:identifierType"/>
+			<xs:element name="value" minOccurs="1" maxOccurs="1" type="xs:string"/>			
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:simpleType name="identifierType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="NHS number"/>
+			<xs:enumeration value="Temporary NHS number"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="retrievalItemType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="supercededId"/>
+			<xs:enumeration value="person.nameUsual"/>
+			<xs:enumeration value="person.nameOther"/>
+			<xs:enumeration value="person.otherDemographics"/>
+			<xs:enumeration value="consent"/>
+			<xs:enumeration value="person.confidentiality"/>
+			<xs:enumeration value="callCentreData"/>
+			<xs:enumeration value="person.addressTelecom"/>
+			<xs:enumeration value="person.misc"/>
+			<xs:enumeration value="pharmacy"/>
+			<xs:enumeration value="guardian"/>
+			<xs:enumeration value="proxy"/>
+			<xs:enumeration value="personalRelationship"/>
+			<xs:enumeration value="primaryCare"/>
+			<xs:enumeration value="person.fullDemographics"/>
+			<xs:enumeration value="person.allData"/>
+			<xs:enumeration value="person.placeOfBirth"/>
+			<xs:enumeration value="person.reasonForRemoval"/>
+			<xs:enumeration value="paperRecordTracking"/>
+			<xs:enumeration value="nhaisPosting"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+</xs:schema>
